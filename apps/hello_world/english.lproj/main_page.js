@@ -14,15 +14,15 @@ HelloWorld.mainPage = SC.Page.design({
     childViews: 'labelView checkboxView'.w(),
     
     labelView: SC.LabelView.design({
-      layout: { centerX: 0, centerY: 0, width: 250, height: 18 },
+      layout: { centerX: 0, centerY: 0, width: 300, height: 50 },
       valueBinding: "HelloWorld.appController.greeting"
     }),
     
     checkboxView: SC.CheckboxView.design({
-      layout: { centerX: 0, centerY: 20, width: 250, height: 18 },
+      layout: { centerX: 0, centerY: 30, width: 300, height: 18 },
       title: "Show Clock",
       valueBinding: "HelloWorld.appController.isClockShowing" 
     })
-  })
+  }).classNames('clock')
 
 });

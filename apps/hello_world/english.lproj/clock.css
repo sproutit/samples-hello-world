@@ -1,0 +1,9 @@
+.clock {
+  background: black;
+  color: white;
+}
+
+.sc-theme .clock .sc-label-view {
+  font-size: 48px;
+  line-height: 1.0;
+}
