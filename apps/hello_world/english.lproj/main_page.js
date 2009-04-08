@@ -11,18 +11,17 @@ HelloWorld.mainPage = SC.Page.design({
   // Add childViews to this pane for views to display immediately on page 
   // load.
   mainPane: SC.MainPane.design({
-    childViews: 'labelView buttonView'.w(),
+    childViews: 'labelView checkboxView'.w(),
     
     labelView: SC.LabelView.design({
       layout: { centerX: 0, centerY: 0, width: 250, height: 18 },
       valueBinding: "HelloWorld.appController.greeting"
     }),
     
-    buttonView: SC.ButtonView.design({
+    checkboxView: SC.CheckboxView.design({
       layout: { centerX: 0, centerY: 20, width: 250, height: 18 },
-      title: "Change Title",
-      action: "toggleGreeting",
-      target: "HelloWorld.appController" 
+      title: "Show Clock",
+      valueBinding: "HelloWorld.appController.isClockShowing" 
     })
   })
 
