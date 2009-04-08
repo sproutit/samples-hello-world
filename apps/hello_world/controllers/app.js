@@ -13,6 +13,6 @@
 HelloWorld.appController = SC.Object.create(
 /** @scope HelloWorld.appController.prototype */ {
 
-  // TODO: Add your own code here.
+  greeting: "Hello World!"
 
 }) ;

@@ -14,7 +14,7 @@ HelloWorld.mainPage = SC.Page.design({
     childViews: 'labelView'.w(),
     
     labelView: SC.LabelView.design({
-      layout: { centerX: 0, centerY: 0, width: 100, height: 18 },
+      layout: { centerX: 0, centerY: 0, width: 250, height: 18 },
       value: "Hello World!!! I'm Using Sproutcore"
     })
   })
