@@ -13,6 +13,12 @@
 HelloWorld.appController = SC.Object.create(
 /** @scope HelloWorld.appController.prototype */ {
 
-  greeting: "Hello World!"
+  greeting: "Hello World!",
+  
+  toggleGreeting: function() {
+    var currentGreeting = this.get('greeting');
+    var newGreeting = (currentGreeting === 'Hello World!') ? 'I am on SproutCore!' : 'Hello World!' ;
+    this.set('greeting', newGreeting);
+  }
 
 }) ;
